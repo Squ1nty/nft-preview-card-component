@@ -19,46 +19,42 @@
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body class="[ bgc-blue-950 ]">
-  <div class="body__outerBorder">
-    <div class="body__innerBorder">
-      <main class="[ flex-c flow ] [ max-width-350 bgc-blue-900 padding-2 border-radius-1 ]">
-        <section class="main__illustrationContainer illustrationContainer [ pointer border-radius-2 overflow-h relative-pos ]" tabindex="0">
-          <div class="illustrationContainer__mainImg">
-            <img class="illustrationContainer__mainIllustration" alt="Equilibrium NFT Illustration" src="./images/image-equilibrium.jpg">
+  <main class="[ flex-c flow ] [ max-width-350 bgc-blue-900 padding-2 border-radius-1 ]">
+    <section class="main__illustrationContainer illustrationContainer [ pointer border-radius-2 overflow-h relative-pos ]" tabindex="0">
+      <div class="illustrationContainer__mainImg">
+        <img class="illustrationContainer__mainIllustration" alt="Equilibrium NFT Illustration" src="./images/image-equilibrium.jpg">
+      </div>
+      <div class="illustrationContainer__hoverBox hoverBox [ abs-full cyan-transparent-filter flex-r center ]"></div>
+      <svg class="hoverBox__svg [ abs-center ]" width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+    </section>
+    <section class="main__content content [ fc-main fw-main fs-main flow ]">
+      <div class="content__nftDetails nftDetails [ flow ]">
+        <h1 class="nftDetails__name [ fc-white fw-600 fs-h1 pointer ]" tabindex="0">Equilibrium #3249</h1>
+        <p class="nftDetails__description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="nftDetails__detailWrapper [ flex-r flex-r-sb ]">
+          <div class="nftDetails__ethereumContainer [ flex-r center gap-1 ]">
+            <svg class="nftDetails__ethereumSVG" width="11" height="18" alt="Ethereum Icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
+            </svg>
+            <p class="nftDetails__amount [ fc-cyan fw-400 ]">0.041 ETH</p>
           </div>
-          <div class="illustrationContainer__hoverBox hoverBox [ abs-full cyan-transparent-filter flex-r center ]"></div>
-          <svg class="hoverBox__svg [ abs-center ]" width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
-        </section>
-        <section class="main__content content [ fc-main fw-main fs-main flow ]">
-          <div class="content__nftDetails nftDetails [ flow ]">
-            <h1 class="nftDetails__name [ fc-white fw-600 fs-h1 pointer ]" tabindex="0">Equilibrium #3249</h1>
-            <p class="nftDetails__description">Our Equilibrium collection promotes balance and calm.</p>
-            <div class="nftDetails__detailWrapper [ flex-r flex-r-sb ]">
-              <div class="nftDetails__ethereumContainer [ flex-r center gap-1 ]">
-                <svg class="nftDetails__ethereumSVG" width="11" height="18" alt="Ethereum Icon" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
-                </svg>
-                <p class="nftDetails__amount [ fc-cyan fw-400 ]">0.041 ETH</p>
-              </div>
-              <div class="nftDetails__timeContainer [ flex-r center gap-1 ]">
-                <svg clasas="nftDetails__timeSVG" width="17" height="17" alt="Clock Icon" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
-                </svg>
-                <p class="nftDetails__timeLeft">3 days left</p>
-              </div>
-            </div>
+          <div class="nftDetails__timeContainer [ flex-r center gap-1 ]">
+            <svg clasas="nftDetails__timeSVG" width="17" height="17" alt="Clock Icon" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
+            </svg>
+            <p class="nftDetails__timeLeft">3 days left</p>
           </div>
-          <hr class="[ bc-blue-800 ]">
-          <div class="content__nftCreatorDetails nftCreatorDetails [ flex-r align-center gap-2 ]">
-            <div class="nftCreatorDetails__profileImgContainer [ max-width-30 b-white border-radius-3 ]">
-              <img class="nftCreatorDetails__profileImg" src="./images/image-avatar.png" alt="Equilibrium #3429 Creator Profile Picture">
-            </div>
-            <p class="nftCreatorDetails__createdByText [ fs-main-xs ]">Creation of <span class="nftCreatorDetails__creatorName [ fc-white pointer ]" tabindex="0">Jules Wyvern</span></p>
-          </div>
-        </section>
-      </main>
-    </div>
-  </div>
+        </div>
+      </div>
+      <hr class="[ bc-blue-800 ]">
+      <div class="content__nftCreatorDetails nftCreatorDetails [ flex-r align-center gap-2 ]">
+        <div class="nftCreatorDetails__profileImgContainer [ max-width-30 b-white border-radius-3 ]">
+          <img class="nftCreatorDetails__profileImg" src="./images/image-avatar.png" alt="Equilibrium #3429 Creator Profile Picture">
+        </div>
+        <p class="nftCreatorDetails__createdByText [ fs-main-xs ]">Creation of <span class="nftCreatorDetails__creatorName [ fc-white pointer ]" tabindex="0">Jules Wyvern</span></p>
+      </div>
+    </section>
+  </main>
 <footer>
   <div class="attribution [ bgc-white width-fitContent padding-2 border-radius-2 ]">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
