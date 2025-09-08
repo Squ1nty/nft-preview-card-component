@@ -1,0 +1,7 @@
+.fc-white:hover, .fc-white:focus{
+  color: var(--cyan-400);
+}
+.illustrationContainer:hover .illustrationContainer__hoverBox,
+.illustrationContainer:hover .hoverBox__svg{
+  opacity: 1;
+}
